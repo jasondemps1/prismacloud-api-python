@@ -24,3 +24,6 @@ class CloudPrismaCloudAPICWPPMixin:
 
     def cloud_discovery_entities(self, query_params=None):
         return self.execute_compute('GET', 'api/v1/cloud/discovery/entities', query_params=query_params)
+
+    def cloud_scan_rules(self, query_params=None):
+        return self.execute_compute('GET', 'api/v1/cloud-scan-rules', query_params=query_params, paginated=True)
