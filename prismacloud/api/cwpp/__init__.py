@@ -3,6 +3,7 @@
 import sys
 
 from .cwpp import *
+from ._agentless import *
 from ._audits import *
 from ._cloud import *
 from ._collections import *
